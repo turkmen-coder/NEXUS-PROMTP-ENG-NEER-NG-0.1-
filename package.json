@@ -1,0 +1,77 @@
+{
+  "name": "nexus-ai-assistant",
+  "version": "1.0.0",
+  "description": "🚀 Advanced AI Prompt Engineering & Template Management System powered by Google Gemini AI",
+  "main": "dist/server.js",
+  "type": "module",
+  "keywords": [
+    "ai",
+    "gemini",
+    "prompt-engineering",
+    "typescript",
+    "react",
+    "nodejs",
+    "vite",
+    "material-ui",
+    "desktop-app",
+    "api"
+  ],
+  "author": {
+    "name": "NEXUS Team"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/nexus-ai-assistant.git"
+  },
+  "homepage": "https://github.com/your-username/nexus-ai-assistant#readme",
+  "bugs": {
+    "url": "https://github.com/your-username/nexus-ai-assistant/issues"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "tsx watch src/server.ts",
+    "dev:client": "vite",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "vite build",
+    "build:server": "tsc -p .",
+    "start": "node dist/server.js",
+    "lint": "eslint .",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@google/generative-ai": "^0.24.1",
+    "@mui/icons-material": "^5.15.0",
+    "@mui/material": "^5.15.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "node-cache": "^5.1.2",
+    "pino": "^9.3.2",
+    "pino-http": "^10.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "undici": "^6.19.8",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.19.9",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.1",
+    "@typescript-eslint/parser": "^8.0.1",
+    "@vitejs/plugin-react": "^5.0.0",
+    "concurrently": "^9.2.0",
+    "eslint": "^9.7.0",
+    "ts-node-dev": "^2.0.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.5.4",
+    "vite": "^7.1.0"
+  }
+}
